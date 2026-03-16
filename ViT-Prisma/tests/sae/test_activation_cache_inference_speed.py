@@ -19,8 +19,9 @@ def iterate_through_dataset(trainer):
 
 
 try: 
-    cfg = VisionModelSAERunnerConfig.load_config("conf_test.json")
+    cfg = VisionModelSAERunnerConfig.load_config("tests\\conf_test.json")
     cfg.use_cached_activations = True
+
 
     trainer = VisionSAETrainer(cfg)
 

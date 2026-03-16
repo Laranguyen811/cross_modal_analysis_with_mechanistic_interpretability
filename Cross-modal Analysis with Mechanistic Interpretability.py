@@ -1145,5 +1145,3 @@ plot_embeddings(
     
 )
 
-
-
