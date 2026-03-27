@@ -114,11 +114,11 @@ def test_loading_clip(model_name):
 
     try:
         if model_name.startswith("open-clip:"):
-            test_open_clip_model(model_name, input_image)
+            _test_open_clip_model(model_name, input_image)
         elif 'dino' in model_name:
-            test_dino_model(model_name, input_image)
+            _test_dino_model(model_name, input_image)
         else:
-            test_hf_clip_model(model_name, input_image)
+            _test_hf_clip_model(model_name, input_image)
         print(f"\n✓ {model_name} PASSED")
     except AssertionError as e:
         print(f"\n✗ {model_name} FAILED")
@@ -136,7 +136,7 @@ def generate_random_input(batch_size, channels, height, width, device):
         torch.manual_seed(1)
         return torch.rand((batch_size, channels, height, width)).to(device)
 
-def test_dino_model(model_name, input_image):
+def _test_dino_model(model_name, input_image):
     
     hf_model = ViTModel.from_pretrained(model_name)
     hf_model.to(DEVICE)
@@ -165,7 +165,7 @@ def test_dino_model(model_name, input_image):
 
 
 
-def test_open_clip_model(model_name, input_image):
+def _test_open_clip_model(model_name, input_image):
     """Test models from the open-clip library."""
     # Convert open-clip model name to hf-hub format
     og_model_name = "hf-hub:" + model_name[len("open-clip:"):]
@@ -199,7 +199,7 @@ def test_open_clip_model(model_name, input_image):
         og_output, hooked_output, atol=TOLERANCE
     ), f"{model_name} output diverges! Max diff: {torch.max(torch.abs(hooked_output - og_output))}"
 
-def test_hf_clip_model(model_name, input_image):
+def _test_hf_clip_model(model_name, input_image):
     """Test models from Hugging Face's CLIP library."""
     # Load the full Hugging Face CLIP model
     hf_model = CLIPModel.from_pretrained(model_name)

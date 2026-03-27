@@ -230,10 +230,9 @@ class VisionModelSAERunnerConfig:
         return self.total_training_tokens // self.train_batch_size
 
     @property
-    def total_training_images(self):
+    def total_training_images(self, dataset_size:int=1_300_000):
         """Returns the total number of training images based on dataset and epochs."""
         # if self.dataset_name == "imagenet1k":
-        dataset_size = 1_300_000
         # else:
         #     raise ValueError(
         #         "Your current dataset is not supported by the VisionModelSAERunnerConfig"

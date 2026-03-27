@@ -26,8 +26,7 @@ def test_train_sae():
     cfg.n_checkpoints = 0
     cfg.n_validation_runs = 0
     cfg.num_epochs = 1
-    cfg.total_training_images = 100
-    cfg.total_training_tokens = cfg.total_training_images * cfg.context_size
+    cfg.total_training_tokens = cfg.total_training_images(dataset_size=50000) * cfg.context_size
 
     trainer = VisionSAETrainer(cfg)
     trainer.run()
