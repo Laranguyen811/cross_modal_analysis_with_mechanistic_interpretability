@@ -96,7 +96,7 @@ MODEL_LIST = [
 
 TEST_LEGACY = True
 TOLERANCE = 1e-4
-DEVICE = "cuda"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def pytest_configure(config):
     config.addinivalue_line(
