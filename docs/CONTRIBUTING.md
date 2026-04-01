@@ -1,6 +1,6 @@
-# Contributing to ViT Prisma 
+# Contributing to understand_multimodal_models and ViT-Prisma
 
-First and foremost, thank you for considering contributing to ViT-Prisma. It's people like you who make ViT-Prisma such a great tool.
+First and foremost, thank you for considering contributing to understand_multimodal_models and ViT-Prisma. It is people like you who make understand_multimodal_models and ViT-Prisma such great tools.
 
 ## Getting Started
 
@@ -21,12 +21,12 @@ First and foremost, thank you for considering contributing to ViT-Prisma. It's p
 ## Reporting Bugs
 
 - Ensure the bug was not already reported by searching on GitHub under Issues.
-- If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behavior that is not occurring.
+- If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a title and a clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behaviour that is not occurring.
 
 ## Suggesting Enhancements
 - Feel free to discuss any new ideas on the Discussions tab
 - Open a new issue on GitHub with a detailed description of the feature.
-- Include the steps that it would enhance, and the possible benefits.
+- Include the steps that would enhance it, and the possible benefits.
 
 ## Pull Requests
 
