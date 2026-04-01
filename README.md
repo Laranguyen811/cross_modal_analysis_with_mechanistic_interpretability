@@ -46,7 +46,7 @@ This repository uses `dev` as the **default branch** to reflect its active, rese
 ## 🤝 Contributing
 This project is in active development. Contributions are welcome, especially around:
 - Mechanistic interpretability techniques
-- Cross-modal benchmarking datasets
+- Cross-modal evaluation datasets
 - Visualisation tools for internal model states
 
 Please open an issue or pull request with your ideas.
