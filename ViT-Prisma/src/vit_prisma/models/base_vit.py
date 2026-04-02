@@ -659,7 +659,7 @@ class HookedViT(HookedTransformer):
                 map_location=torch.device(model_config.device),
                 weights_only=False,
             )
-            model.load_state_dict(checkpoint["model_state_dict"])
+            model.load_state_dict(checkpoint["model_state_dict"], strict = False)
             return model
         else:
             raise Exception(

@@ -2,20 +2,21 @@ import timm
 import torch
 
 from vit_prisma.models.base_vit import HookedViT
-
+import pytest
 
 #currently only vit_base_patch16_224 supported (config loading issue)
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="Requires CUDA")
 def test_loading_timm():
     TOLERANCE = 1e-4
 
-    model_name = "vit_base_patch16_224"
+    model_name = "timm/vit_so150m2_patch16_reg1_gap_448.sbb_e200_in12k_ft_in1k"
     batch_size = 5
     channels = 3
     height = 224
     width = 224
-    device = "cpu"
+    device = "cpu" if not torch.cuda.is_available() else "cuda"
 
-    hooked_model = HookedViT.from_pretrained(model_name)
+    hooked_model = HookedViT.from_pretrained(model_name, patch_size=32)
     hooked_model.to(device)
     timm_model = timm.create_model(model_name, pretrained=True)
     timm_model.to(device)

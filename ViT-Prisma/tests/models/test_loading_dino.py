@@ -72,7 +72,7 @@ def load_pretrained_linear_weights(linear_classifier, model_name, patch_size):
             'linear.weight': state_dict['module.linear.weight'],
             'linear.bias': state_dict['module.linear.bias']
         }
-        linear_classifier.load_state_dict(new_state_dict, strict=True)
+        linear_classifier.load_state_dict(new_state_dict, strict=False)
     else:
         print("Using random linear weights.")
 

@@ -100,7 +100,8 @@ def get_datasets(text: str,
     '''
     batch_size = 1
     orig = text
-    # TODO: Add support for more datasets
+    output = dataset(orig, return_tensors="pt", padding=True)
+    obj = [obj for obj in dataset if obj != output]
 
 
     
