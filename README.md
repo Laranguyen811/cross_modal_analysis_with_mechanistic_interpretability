@@ -1,5 +1,7 @@
 
 # Understanding Multimodal Models
+AI systems that can process multiple data types —like images, text, and audio combined—are the future. But there is a problem: we do not understand how they work internally as well as we grasp Large Language Models (LLMs).
+While researchers have progressed in understanding text-only AI models, multimodal models (those handling multiple data types) remain more mysterious. As Balasubramanian et al. (2025) point out, our ability to interpret these models lags despite their growing importance.
 
 This repository helps our community better understand multimodal models, including exploring cross-modal representations through the lens of mechanistic interpretability. It is designed for iterative experimentation, diagnostic clarity, and reproducible workflows. My cross-modal analysis is exploratory research with loosely formulated hypotheses, less strict testing and fewer details about experimental design. 
 
