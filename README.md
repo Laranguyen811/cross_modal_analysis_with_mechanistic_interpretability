@@ -52,6 +52,12 @@ This project is in active development. Contributions are welcome, especially aro
 - Visualisation tools for internal model states
 
 Please open an issue or pull request with your ideas.
+## 🧠 Design
+I am designing this platform based on user feedback and research:
+Please view the demo here: https://www.youtube.com/watch?v=G5z9JRJVrd0
+Please check out my website prototype here: https://good-nature.lovable.app/
+Please view my under-development wireframe here: https://canva.link/jcp1wcmkkddpoy4
+Please view my under-development information architecture here: https://canva.link/w4xynpc15chsyl0
 
 ## 📜 License
 This repository is licensed under the MIT License. See LICENSE for details.
