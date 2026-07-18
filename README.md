@@ -3,7 +3,7 @@
 AI systems that can process multiple data types —like images, text, and audio combined—are the future. But there is a problem: we do not understand how they work internally as well as we grasp Large Language Models (LLMs).
 While researchers have progressed in understanding text-only AI models, multimodal models (those handling multiple data types) remain more mysterious. As Balasubramanian et al. (2025) point out, our ability to interpret these models lags despite their growing importance.
 
-This repository helps our community better understand multimodal models, including exploring cross-modal representations through the lens of mechanistic interpretability. It is designed for iterative experimentation, diagnostic clarity, and reproducible workflows. My cross-modal analysis is exploratory research with loosely formulated hypotheses, less strict testing and fewer details about experimental design. 
+This repository helps our technically minded community better understand multimodal models, including exploring cross-modal representations through the lens of mechanistic interpretability. What is mechanistic interpretability? It is a technique of finding a specific algorithm or computation that a model learns during training. They can use this repository to detect misalignment in AI. What does misalignment mean? Misalignment in AI refers to artificial intelligence systems that fail to align with human values, goals, or intentions. It is designed for iterative experimentation, diagnostic clarity, and reproducible workflows. My cross-modal analysis is exploratory research with loosely formulated hypotheses, less strict testing and fewer details about experimental design. 
 
 ## 🔍 Project Overview
 
@@ -53,11 +53,7 @@ This project is in active development. Contributions are welcome, especially aro
 
 Please open an issue or pull request with your ideas.
 ## 🧠 Design
-I am designing this platform based on user feedback and research:
-Please view the demo here: https://www.youtube.com/watch?v=G5z9JRJVrd0
-Please check out my website prototype here: https://good-nature.lovable.app/
-Please view my under-development wireframe here: https://canva.link/jcp1wcmkkddpoy4
-Please view my under-development information architecture here: https://canva.link/w4xynpc15chsyl0
+I am designing this platform based on user feedback and research. Please feel free to email me at laranguyen811@gmail.com. Alternatively, please create an issue for the repository. 
 
 ## 📜 License
 This repository is licensed under the MIT License. See LICENSE for details.
