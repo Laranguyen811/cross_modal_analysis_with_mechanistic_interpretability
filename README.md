@@ -1,5 +1,5 @@
 
-# Research Direction: Understanding Multimodal Models and Detecting Misalignment
+# Understanding Multimodal Models and Detecting Misalignment Research Direction
 My formed agenda involves understanding multimodal models and detecting misalignment. Details include:
 
 * Designing experiments to understand multimodal models using various techniques, including mechanistic interpretability and representation engineering
